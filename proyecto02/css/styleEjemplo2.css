@@ -22,3 +22,7 @@ h1 {
 .subrayado {
 	text-decoration: underline;
 }
+
+.fondoNegro {
+	background: black;
+}
