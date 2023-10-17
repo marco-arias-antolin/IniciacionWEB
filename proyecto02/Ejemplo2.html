@@ -56,6 +56,36 @@
 				<li>font-size: define el tamaño de la fuente.</li>
 				<li>color: define el color de la fuente.</li>
 			</ul>
+			<p>Se puede asignar un estilo a una clase poniendo .nombreClase</p>
+			<p>HTML</p>
+			<pre><code>&lt;p class="miEstilo1"&gt;Párrafo con la clase miEstilo1&lt;/p&gt;</code></pre>
+			<p>CSS</p>
+			<pre><code>.miEstilo {
+  color: purple;
+  text-align: start;
+  width: 100%;
+}</code></pre>
+			<p class="miEstilo1">Párrafo con la clase miEstilo1</p>
+			<p>Para poner un texto en negrita se encierra en la etiqueta</p>
+			<pre><code>&lt;span class="negrita"&gt;&lt;/span&gt;</code></pre>
+			<p>Y creamos la clase negrita en el CSS</p>
+			<pre><code>.negrita {
+  font-weight: bold;
+}</code></pre>
+			<p>Ejemplo en un párrafo:</p>
+			<p><span class="negrita">Carles Duran tiene claro que “es muy importante ganar los partidos de casa, ya se está viendo que marcan la diferencia.</span> Nosotros lo valoramos mucho, porque el equipo siempre después de una derrota necesita el apoyo de la gente. Y tengo claro que el equipo debe hacer para que la gente recupere la confianza que en el último partido no les dimos. Lo que queremos es volver a jugar bien a baloncesto”, dijo el técnico.</p>
+			<p>La cursiva y el subrayado se usan como la negrita (usando la etiqueta "span") y el css sería:</p>
+			<pre><code>.cursiva {
+  font-style: italic;
+}
+
+.subrayado {
+  text-decoration: underline;
+}</code></pre>
+			<p>Ejemplo de <span class="cursiva">cursiva</span> y de <span class="subrayado">subrayado</span>
+			</p>
+			<p class="negrita cursiva subrayado">Se pueden aplicar varias clases en una etiqueta.</p>
+			<pre><code>&lt;p class="negrita cursiva subrayado"&gt;Varias clases en una etiqueta.&lt;/p&gt;</code></pre>
 		</section>
 	</main>
 	<footer>
