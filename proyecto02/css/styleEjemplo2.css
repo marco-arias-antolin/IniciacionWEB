@@ -1,0 +1,6 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	/* Posibles unidades: px, em, etc */
+	font-size: 24px;
+	color: #a712e2;
+}
