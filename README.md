@@ -1,6 +1,6 @@
 # IFCD010PO Iniciación a la creación de páginas WEB
 
-En este repositorio puedes encontrar material relacionado con el curso de **confección y publicación de páginas web**:
+En este repositorio puedes encontrar material relacionado con el curso de **Iniciación a la creación de páginas WEB**:
 - Enunciados
 - Exámenes
 - Manuales
