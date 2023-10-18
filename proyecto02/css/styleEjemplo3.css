@@ -1,0 +1,14 @@
+body {
+	margin: 0 auto;
+	padding: 0 0 3rem;
+	width: 80%;
+}
+
+.ancho80 {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.negrita {
+	font-weight: bold;
+}

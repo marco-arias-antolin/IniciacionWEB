@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<!--
+	Copyright (C) 2023	Marco Arias - mail://marcoariasantolin@gmail.com
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+	Autor:			Marco Antonio Arias Antolín.
+	Año:			2023
+	Descripción:	Ejemplo 3.
+	Uso:			Didáctico.
+	-->
+	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGhlaWdodD0nMjAwJyB3aWR0aD0nMjAwJyB2aWV3Qm94PScwIDAgMjAwIDIwMCc+DQoJPHRleHQgeD0nNTAlJyB5PScxMTBweCcgc3R5bGU9J2ZpbGw6I2FkYjViZDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsO2ZvbnQtc2l6ZTozMzNweDtmb250LWZhbWlseTpDb3VyaWVyO2ZvbnQtd2VpZ2h0OmJvbGQ7dGV4dC1hbmNob3I6bWlkZGxlJz5NPC90ZXh0Pg0KPC9zdmc+">
+	<title>Ejemplo 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Marco Antonio Arias Antolín">
+	<meta name="description" content="Primeros estilos con css (continuación).">
+	<link rel="stylesheet" href="/IniciacionWEB/css/style.css">
+	<link rel="stylesheet" href="css/styleEjemplo3.css">
+</head>
+
+<body>
+	<header>
+		<h1>Ejemplo 3</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Más estilos</h2>
+			<p>A continuación se va a estructurar la página</p>
+			<p>Se busca que la página ocupe el 80% del ancho del dispositivo</p>
+
+			<!-- Textos sacados de:
+			https://www.sport.es/es/noticias/baloncesto/joventut-primera-victoria-olimpic-eurocup-93446643
+			-->
+			<h3>El Joventut, a por la primera victoria en el Olímpic en la Eurocup</h3>
+			<p><span class="negrita">Carles Duran tiene claro que “es muy importante ganar los partidos de casa, ya se está viendo que marcan la diferencia.</span> Nosotros lo valoramos mucho, porque el equipo siempre después de una derrota necesita el apoyo de la gente. Y tengo claro que el equipo debe hacer para que la gente recupere la confianza que en el último partido no les dimos. Lo que queremos es volver a jugar bien a baloncesto”, dijo el técnico.</p>
+		</section>
+		<section>
+			<h2>Solución 1</h2>
+			<pre><code>body {
+  margin: 0 auto;
+  width: 80%;
+}</code></pre>
+		</section>
+		<section>
+			<h2>Solución 2</h2>
+			<p>En vez de asignarle el ancho al documento se pueden asignar clases a los elementos.</p>
+			<pre><code>.ancho80 {
+  margin: 0 auto;
+  width: 80%;
+}</code></pre>
+		</section>
+	</main>
+	<footer>
+		<span><span>&copy;</span> Marco Antonio Arias Antolín. 2023</span>
+	</footer>
+</body>
+
+</html>
