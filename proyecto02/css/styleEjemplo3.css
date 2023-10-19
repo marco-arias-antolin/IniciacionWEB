@@ -4,6 +4,15 @@ body {
 	width: 80%;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 6px;
+	border: 2px solid var(--color, black);
+}
+
 .ancho80 {
 	margin: 0 auto;
 	width: 80%;
@@ -11,4 +20,24 @@ body {
 
 .negrita {
 	font-weight: bold;
+}
+
+.izquierda {
+	box-sizing: border-box;
+	float: left;
+	padding: 6px;
+	width: 50%;
+}
+
+#contenedor1 {
+	background: purple;
+}
+
+#contenedor1>div {
+	background-clip: content-box, padding-box;
+	background-image: linear-gradient(to bottom, blue 0%, blue 100%), linear-gradient(to bottom, white 0%, white 100%);
+	border: 18px solid black;
+	color: blue;
+	margin: 18px;
+	padding: 18px;
 }

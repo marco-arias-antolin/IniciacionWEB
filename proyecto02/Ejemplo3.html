@@ -33,6 +33,10 @@
 	<link rel="stylesheet" href="css/styleEjemplo3.css">
 </head>
 
+<!-- Textos sacados de:
+https://www.sport.es/es/noticias/baloncesto/joventut-primera-victoria-olimpic-eurocup-93446643
+-->
+
 <body>
 	<header>
 		<h1>Ejemplo 3</h1>
@@ -43,9 +47,6 @@
 			<p>A continuación se va a estructurar la página</p>
 			<p>Se busca que la página ocupe el 80% del ancho del dispositivo</p>
 
-			<!-- Textos sacados de:
-			https://www.sport.es/es/noticias/baloncesto/joventut-primera-victoria-olimpic-eurocup-93446643
-			-->
 			<h3>El Joventut, a por la primera victoria en el Olímpic en la Eurocup</h3>
 			<p><span class="negrita">Carles Duran tiene claro que “es muy importante ganar los partidos de casa, ya se está viendo que marcan la diferencia.</span> Nosotros lo valoramos mucho, porque el equipo siempre después de una derrota necesita el apoyo de la gente. Y tengo claro que el equipo debe hacer para que la gente recupere la confianza que en el último partido no les dimos. Lo que queremos es volver a jugar bien a baloncesto”, dijo el técnico.</p>
 		</section>
@@ -62,6 +63,85 @@
 			<pre><code>.ancho80 {
   margin: 0 auto;
   width: 80%;
+}</code></pre>
+		</section>
+		<section>
+			<h2>Margen, borde y relleno</h2>
+			<p>Un contenedor tiene siempre.</p>
+			<table>
+				<tr>
+					<td>Margen</td>
+					<td>margin</td>
+				</tr>
+				<tr>
+					<td>Borde</td>
+					<td>border</td>
+				</tr>
+				<tr>
+					<td>Relleno</td>
+					<td>padding</td>
+				</tr>
+			</table>
+			<p>Pueden tener valor 0</p>
+			<p>En este ejemplo se muestran:</p>
+			<ul>
+				<li>Margen en púrpura</li>
+				<li>Borde en negro</li>
+				<li>Padding en blanco</li>
+				<li>Fondo en azul</li>
+			</ul>
+			<div id="contenedor1">
+				<div>La letra tiene el color del fondo</div>
+			</div>
+			<p>Las medidas se pueden especificar una a una</p>
+			<ul>
+				<li>margin-bottom</li>
+				<li>margin-left</li>
+				<li>margin-right</li>
+				<li>margin-top</li>
+			</ul>
+			<ul>
+				<li>padding-bottom</li>
+				<li>padding-left</li>
+				<li>padding-right</li>
+				<li>padding-top</li>
+			</ul>
+			<p>Pero también se puede usar el método abreviado usando</p>
+			<ul>
+				<li>margin</li>
+				<li>padding</li>
+			</ul>
+			<p>Las medidas se especifican con 1, 2, 3 o 4 valores</p>
+			<pre><code>        🔼▶️🔽◀️
+margin:    2px;
+
+       🔼🔽  ▶️◀️
+margin: 2px   4px;
+
+        🔼   ▶️◀️  🔽
+margin: 2px   4px   6px;
+
+        🔼   ▶️   🔽   ◀️
+margin: 2px  4px  6px  8px;
+</code></pre>
+		</section>
+		<section>
+			<h2>Cajas flotantes</h2>
+			<p>Se puede usar <code>float</code> para organizar los contenedores.<br>
+				Sus valores pueden ser: <code>left</code> o <code>right</code> <br>
+				También se usa <code>clear</code> para mover hacia abajo el elemento y limpiar los elementos a izquierda, derecha o ambas. <br>
+				<code>clear</code> puede tener los valores <code>left</code>, <code>right</code> o <code>both</code>
+			</p>
+			<h3>Ejemplo</h3>
+			<p>Los siguientes párrafos están flotando a la izquierda.</p>
+			<div>
+				<p class="izquierda">Carles Duran tiene claro que “es muy importante ganar los partidos de casa, ya se está viendo que marcan la diferencia. Nosotros lo valoramos mucho, porque el equipo siempre después de una derrota necesita el apoyo de la gente. Y tengo claro que el equipo debe hacer para que la gente recupere la confianza que en el último partido no les dimos. Lo que queremos es volver a jugar bien a baloncesto”, dijo el técnico.</p>
+				<p class="izquierda">Cuenta Duran que “son un rival que juega bien a baloncesto, con un núcleo de jugadores lituanos que juegan bien. Tienen a Sulaimon como referente, que está jugando con mucha confianza, y con la desgracia de la lesión de Zagars. Son un equipo con mucho talento”, comentó el técnico.</p>
+			</div>
+			<p>CSS</p>
+			<pre><code>.izquierda {
+  float: left;
+  width: 50%;
 }</code></pre>
 		</section>
 	</main>
