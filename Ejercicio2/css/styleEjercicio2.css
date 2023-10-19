@@ -1,0 +1,119 @@
+* {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em;
+}
+
+body {
+	background-color: lightgray;
+	height: 100%;
+	margin: 0;
+}
+
+h1 {
+	color: #ca2323;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+	width: 80%;
+}
+
+h2 {
+	clear: both;
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.red {
+	color: red;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.floatLeft,
+.floatRight {
+	width: 45%;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+#div1 {
+	position: relative;
+	top: 20px;
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
+#div2 {
+	position: relative;
+	top: 40px;
+	clear: both;
+	width: 80%;
+	height: 200px;
+	background-color: black;
+	padding: 1em;
+	color: white;
+	margin: 0 auto;
+}
+
+#div3 {
+	position: relative;
+	top: 40px;
+	clear: both;
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#div4 {
+	clear: both;
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#div5 {
+	clear: both;
+	width: 25%;
+	margin: 0 auto;
+}
+
+.colI {
+	width: 45%;
+	float: left;
+}
+
+.colD {
+	width: 45%;
+	float: right;
+}
