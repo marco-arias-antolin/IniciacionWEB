@@ -1,4 +1,6 @@
 body {
+	background-color: #a4c3e1;
+	height: 100%;
 	margin: 0;
 }
 
@@ -6,6 +8,12 @@ header {
 	background-color: #e95520;
 	margin: 0 auto;
 	width: 80%;
+	text-align: center;
+}
+
+nav {
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 main {
@@ -13,57 +21,29 @@ main {
 	margin: 0 auto 20px;
 }
 
-main section {
-	display: grid;
-	grid-template-columns: repeat(2, 50%);
-	grid-gap: 1px;
-}
-
-main section h1 {
-	background-color: black;
-	border-radius: 30px 30px 0 0;
-	color: white;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size: 2em;
-	font-weight: normal;
-	grid-column: 1/3;
-	padding: 20px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
 header object {
 	height: 24px;
 }
 
-header a {
+header nav a {
+	align-items: center;
 	color: white;
-	display: inline-block;
+	display: inline-flex;
 	font-size: 1.5em;
 	padding: 20px;
 	text-decoration: none;
 }
 
-main figure {
-	border-radius: 10px;
-	border: solid 3px #000;
-	margin: 0;
-	padding: 20px;
+header nav a span::before {
+	content: "\00a0";
 }
 
-main figure img {
-	border-radius: 20px;
-	height: 100%;
-	object-fit: cover;
-	width: 100%;
-}
-
-main figure figcaption {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.75em;
-	font-style: italic;
+h1 {
+	font-weight: normal;
 	text-align: center;
-	/* white-space: nowrap; */
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 30px 30px 0 0;
 }
 
 footer {
