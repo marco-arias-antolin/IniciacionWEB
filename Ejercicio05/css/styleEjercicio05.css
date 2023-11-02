@@ -1,17 +1,26 @@
 :root {
 	--bg: white;
 	--color: #212529;
+	--link: #9c9a9a;
 }
 
 @media (min-width: 640px) {
 	.juego {
 		width: calc((100% - 4%) / 3);
 	}
+
+	#pie>#arriba {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (min-width: 769px) {
 	.juego {
 		width: calc((100% - 6%) / 4);
+	}
+
+	#pie>#arriba {
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
 
@@ -22,22 +31,39 @@
 }
 
 /* Principal */
+html {
+	font-size: 62.5%;
+	font-size-adjust: 100%;
+}
+
 html,
 body {
 	min-height: 100%;
 }
 
 body {
+	color: #333;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.42857143;
 	margin: 0;
 }
 
 main {
 	flex: 1;
-	padding-bottom: 6rem;
+	/* padding-bottom: 6rem; */
 	position: relative;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* Clases */
@@ -242,12 +268,22 @@ img {
 		"arriba"
 		"logo"
 		"copyright";
+	margin-top: 40px;
 }
 
 #pie>#arriba {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
 	grid-area: arriba;
+	grid-column-gap: 25px;
+	margin: 0 auto;
+	width: calc(85% - 40px);
+}
+
+#pie>#arriba h4 {
+	line-height: 1.1;
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 #pie>#arriba a {
@@ -256,17 +292,38 @@ img {
 
 #pie>#arriba section {
 	border-right: 1px solid #9c9a9a;
-	margin-left: 1rem;
+}
+
+#pie>#arriba section a {
+	padding-right: 50px;
 }
 
 #pie>#arriba section:last-child {
 	border: none;
 }
 
+#pie>#arriba .social-links a {
+	display: inline-block;
+	padding: 0;
+}
+
 #pie img {
-	margin: 0 auto;
+	margin: 40px auto 20px;
 	width: auto;
 }
+
+#pie .separador {
+	border-top: 1px solid #9c9a9a;
+}
+
+#pie .copyright {
+	display: flex;
+	width: 40%;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
 
 /* Pie de página */
 body>footer {
@@ -276,6 +333,7 @@ body>footer {
 	padding-bottom: .6rem;
 	position: fixed;
 	text-align: center;
+	display: none;
 }
 
 body>footer>span {
